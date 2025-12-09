@@ -109,9 +109,9 @@
                 <a href="tel:0800111222" class="btn btn-outline-primary rounded-pill px-4 phone-link">Call <span class="phone-text">0800 111 222</span></a>
                 
                 <!-- Hidden Test Trigger placed next to call button -->
-                <div id="test-trigger" onclick="toggleMenu()" title="Open Test Controls">
+                <!-- <div id="test-trigger" onclick="toggleMenu()" title="Open Test Controls">
                     <i class="fas fa-bars"></i>
-                </div>
+                </div> -->
             </div>
         </div>
     </nav>
@@ -210,12 +210,12 @@
     </footer>
 
     <!-- Control Panel (Hidden by default) -->
-    <div id="test-panel">
+    <!-- <div id="test-panel">
         <div class="d-flex justify-content-between align-items-center mb-2">
             <span class="test-label">🧪 Test Scenarios</span>
             <button onclick="toggleMenu()" class="btn btn-sm btn-link text-white text-decoration-none p-0"><i class="fas fa-times"></i></button>
         </div>
-        
+
         <select id="test-selector" class="form-select form-select-sm mb-2">
             <option value="" selected disabled>Select Scenario...</option>
             <optgroup label="Positive Tests (Alert)">
@@ -237,12 +237,12 @@
                 <option value="N6">N6: Social Links</option>
             </optgroup>
         </select>
-        
+
         <div class="d-flex gap-2">
             <button onclick="runTest()" class="btn btn-primary btn-sm w-100">Run</button>
             <button onclick="location.reload()" class="btn btn-outline-light btn-sm" title="Reset Page">↻</button>
         </div>
-    </div>
+    </div> -->
 
     <script>
         // Store original page state for R8 reset
@@ -312,8 +312,8 @@
            To deactivate: Re-comment the line or remove it
            ======================================== */
 
-        // window.addEventListener('load', function() {
-        //     triggerR1();  // Closure Banner
+        window.addEventListener('load', function() {
+            triggerR1();  // Closure Banner
         //     triggerR2();  // Phone Change
         //     triggerR3();  // Hours Change
         //     triggerR4();  // SMS Change
@@ -321,7 +321,7 @@
         //     triggerR6();  // Chat URL Change
         //     triggerR7();  // Temporary Notice
         //     triggerR8();  // Bad Actor Takeover
-        // });
+        });
 
         // --- Positive Scenarios (R1-R8) ---
         
