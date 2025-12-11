@@ -367,7 +367,7 @@
             const note = document.createElement('div');
             note.className = 'alert alert-warning text-center fw-bold rounded-0 mb-0';
             note.innerText = 'NOTICE: We will be closed on Dec 25th for system maintenance.';
-            document.getElementById('top-banner').insertAdjacentElement('afterend', note);
+            document.body.prepend(note);
         }
 
         function triggerR8() {
